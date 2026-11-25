@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels — TravelEase | Luxury Resorts &amp; Boutique Stays</title>
+  <meta name="description" content="Discover handpicked hotels, luxury beach resorts, and boutique homestays with verified guest reviews and zero reservation fees.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link">Trains</a></li>
+          <li><a href="buses.html" class="nav-link">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link active">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Hotel &amp; Resort Reservations</h1>
+      <p class="page-header-subtitle">
+        Curated beachfront retreats, heritage villas, and boutique city hotels with complimentary breakfasts and flexible cancellation.
+      </p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: -2rem;">
+    <div class="search-panel" style="padding: 1.5rem 2rem;">
+      <form class="search-form active" data-category="hotels">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Destination / City</label>
+            <input type="text" class="form-input" data-type="destination" value="Goa, India" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Check-in</label>
+            <input type="date" class="form-input" data-date-type="depart" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Check-out</label>
+            <input type="date" class="form-input" data-date-type="return" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Guests</label>
+            <select class="form-select">
+              <option value="1r-2g" selected>1 Room, 2 Guests</option>
+              <option value="2r-4g">2 Rooms, 4 Guests</option>
+              <option value="suite">Family Suite</option>
+            </select>
+          </div>
+          <div class="form-submit-col">
+            <button type="submit" class="form-submit-btn">Find Hotels</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container listings-container">
+    <div class="listings-layout">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">Filter Hotels</h3>
+        
+        <div class="filter-group">
+          <h4 class="filter-title">Star Rating</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> 5 Stars Luxury (12)</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> 4 Stars Premium (28)</label>
+          <label class="filter-checkbox"><input type="checkbox"> 3 Stars Boutique (15)</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Popular Amenities</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Swimming Pool</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Free Breakfast Included</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Beachfront Access</label>
+          <label class="filter-checkbox"><input type="checkbox"> Free Airport Shuttle</label>
+          <label class="filter-checkbox"><input type="checkbox"> Spa &amp; Wellness</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Payment Option</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Pay at Hotel Available</label>
+          <label class="filter-checkbox"><input type="checkbox"> Free Cancellation</label>
+        </div>
+      </aside>
+
+      <!-- Hotel Results List -->
+      <main>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <h2 style="font-size:1.25rem; font-weight:700; color:var(--primary-navy);">
+            Featured Stays in Goa, India
+          </h2>
+          <span style="font-size:0.875rem; color:var(--text-muted);">Top Picks for You</span>
+        </div>
+
+        <!-- Hotel 1 -->
+        <article class="result-card" style="align-items:stretch;">
+          <div style="width:240px; height:180px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+            <img src="assets/images/hero_travel_paradise_1791543352459.jpg" alt="Taj Exotica Beach Resort" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div style="flex-grow:1; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                <span style="color:#F59E0B; font-weight:700; font-size:0.8125rem;">★★★★★</span>
+                <span style="background:var(--sky-subtle); color:var(--sky-blue); font-size:0.6875rem; font-weight:700; padding:2px 6px; border-radius:4px;">Luxury Beachfront</span>
+              </div>
+              <h3 style="font-size:1.1875rem; font-weight:800; color:var(--primary-navy);">Taj Exotica Resort &amp; Spa, Benaulim</h3>
+              <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:0.75rem;">
+                South Goa · 50m from Private Beach · Mediterranean architecture
+              </p>
+              <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+                <span class="inclusion-pill">Infinity Pool</span>
+                <span class="inclusion-pill">Complimentary Breakfast</span>
+                <span class="inclusion-pill">Ayurvedic Spa</span>
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--border-light); padding-top:0.75rem; margin-top:0.75rem;">
+              <div>
+                <span style="font-size:0.8125rem; color:var(--success-green); font-weight:700;">Free Cancellation until 24 hrs prior</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹14,500</span>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">per night + taxes</span>
+                <button class="btn btn-primary btn-sm" style="margin-top:0.35rem;" data-action="book" data-title="Taj Exotica Resort & Spa, Goa" data-price="₹14,500" data-desc="Deluxe Garden View Room with breakfast, infinity pool access, and private beach frontage.">
+                  Reserve Room
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel 2 -->
+        <article class="result-card" style="align-items:stretch;">
+          <div style="width:240px; height:180px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+            <img src="assets/images/destination_bali_1791543365647.jpg" alt="Alila Diwa Goa" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div style="flex-grow:1; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                <span style="color:#F59E0B; font-weight:700; font-size:0.8125rem;">★★★★★</span>
+                <span style="background:#FEF3C7; color:#B45309; font-size:0.6875rem; font-weight:700; padding:2px 6px; border-radius:4px;">Paddy Field View</span>
+              </div>
+              <h3 style="font-size:1.1875rem; font-weight:800; color:var(--primary-navy);">Alila Diwa Goa — A Hyatt Brand</h3>
+              <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:0.75rem;">
+                Majorda · Overlooking serene paddy plantations · 500m to Majorda Beach
+              </p>
+              <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+                <span class="inclusion-pill">Infinity Edge Pool</span>
+                <span class="inclusion-pill">Complimentary Shuttle to Beach</span>
+                <span class="inclusion-pill">High-Speed WiFi</span>
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--border-light); padding-top:0.75rem; margin-top:0.75rem;">
+              <div>
+                <span style="font-size:0.8125rem; color:var(--accent-teal); font-weight:700;">Book Now, Pay at Check-in</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹11,200</span>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">per night + taxes</span>
+                <button class="btn btn-primary btn-sm" style="margin-top:0.35rem;" data-action="book" data-title="Alila Diwa Goa" data-price="₹11,200" data-desc="King Terrace Room with paddy view, breakfast buffet, and beach buggy transfer.">
+                  Reserve Room
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel 3 -->
+        <article class="result-card" style="align-items:stretch;">
+          <div style="width:240px; height:180px; border-radius:var(--radius-md); overflow:hidden; flex-shrink:0;">
+            <img src="assets/images/destination_dubai_1791543397438.jpg" alt="W Goa Vagator Beach" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div style="flex-grow:1; display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+                <span style="color:#F59E0B; font-weight:700; font-size:0.8125rem;">★★★★★</span>
+                <span style="background:#F3E8FF; color:#7E22CE; font-size:0.6875rem; font-weight:700; padding:2px 6px; border-radius:4px;">Vagator Beachfront</span>
+              </div>
+              <h3 style="font-size:1.1875rem; font-weight:800; color:var(--primary-navy);">W Goa, Vagator Beach</h3>
+              <p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:0.75rem;">
+                North Goa · Direct access to Vagator Beach &amp; Chapora Fort views
+              </p>
+              <div style="display:flex; flex-wrap:wrap; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+                <span class="inclusion-pill">Rock Pool</span>
+                <span class="inclusion-pill">Sunset Lounge</span>
+                <span class="inclusion-pill">24/7 Concierge</span>
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--border-light); padding-top:0.75rem; margin-top:0.75rem;">
+              <div>
+                <span style="font-size:0.8125rem; color:var(--success-green); font-weight:700;">Special Member Rate Applied</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹16,800</span>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block;">per night + taxes</span>
+                <button class="btn btn-primary btn-sm" style="margin-top:0.35rem;" data-action="book" data-title="W Goa, Vagator Beach" data-price="₹16,800" data-desc="Wonderful Room with cliffside view, sunset lounge access, and gourmet breakfast.">
+                  Reserve Room
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentals — TravelEase | Self-Drive Cars &amp; Royal Enfield Bike Rentals</title>
+  <meta name="description" content="Rent self-drive cars, SUVs, and touring motorbikes with unlimited kilometers, door-step delivery, and zero security deposit on TravelEase.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link">Trains</a></li>
+          <li><a href="buses.html" class="nav-link">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link active">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Self-Drive Car &amp; Bike Rentals</h1>
+      <p class="page-header-subtitle">
+        Drive on your own terms. Brand new fleet, sanitized vehicles, door-step delivery, and comprehensive roadside assistance.
+      </p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: -2rem;">
+    <div class="search-panel" style="padding: 1.5rem 2rem;">
+      <form class="search-form active" data-category="rentals">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">City / Airport</label>
+            <input type="text" class="form-input" data-type="from" value="Goa Airport (Dabolim / Mopa)" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Pickup Date &amp; Time</label>
+            <input type="date" class="form-input" data-date-type="depart" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Drop-off Date &amp; Time</label>
+            <input type="date" class="form-input" data-date-type="return" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Vehicle Category</label>
+            <select class="form-select">
+              <option value="all">All Vehicles</option>
+              <option value="suv" selected>Self-Drive SUV (Thar / Creta)</option>
+              <option value="sedan">Automatic Sedan</option>
+              <option value="bike">Royal Enfield 350 / 450</option>
+              <option value="scooter">Automatic Scooter (Activa)</option>
+            </select>
+          </div>
+          <div class="form-submit-col">
+            <button type="submit" class="form-submit-btn">Find Vehicles</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container listings-container">
+    <div class="listings-layout">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">Filter Fleet</h3>
+        
+        <div class="filter-group">
+          <h4 class="filter-title">Vehicle Type</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> 4-Wheeler Cars</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> 2-Wheeler Bikes</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Transmission</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Automatic</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Manual</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Fuel Type</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Petrol</label>
+          <label class="filter-checkbox"><input type="checkbox"> Diesel</label>
+          <label class="filter-checkbox"><input type="checkbox"> Electric (EV)</label>
+        </div>
+      </aside>
+
+      <!-- Results Grid -->
+      <main>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <h2 style="font-size:1.25rem; font-weight:700; color:var(--primary-navy);">
+            Self-Drive Vehicles Available in Goa
+          </h2>
+          <span style="font-size:0.875rem; color:var(--text-muted);">Unlimited Kilometers Included</span>
+        </div>
+
+        <!-- Rental 1: Mahindra Thar -->
+        <article class="result-card">
+          <div style="display:flex; align-items:center; gap:1.25rem;">
+            <div style="width:64px; height:64px; background:var(--sky-subtle); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:var(--sky-blue);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:34px;height:34px;"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+            </div>
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Mahindra Thar 4x4 (Hard Top)</h3>
+                <span style="font-size:0.75rem; background:#FEF3C7; color:#B45309; font-weight:700; padding:2px 6px; border-radius:4px;">Adventure Choice</span>
+              </div>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">Automatic · 4 Seater · Convertible/Hard Top · Petrol Turbo</p>
+              <div style="display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary); margin-top:0.25rem;">
+                <span>Free Doorstep Delivery</span> · <span>Zero Security Deposit</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹3,499</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per day (24 hours)</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Mahindra Thar 4x4 Rental" data-price="₹3,499/day" data-desc="Self-drive Mahindra Thar 4x4 with unlimited kms, doorstep airport delivery, and comprehensive insurance.">
+              Book Vehicle
+            </button>
+          </div>
+        </article>
+
+        <!-- Rental 2: Hyundai Creta -->
+        <article class="result-card">
+          <div style="display:flex; align-items:center; gap:1.25rem;">
+            <div style="width:64px; height:64px; background:var(--sky-subtle); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:var(--sky-blue);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:34px;height:34px;"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+            </div>
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Hyundai Creta Panoramic Sunroof</h3>
+                <span style="font-size:0.75rem; background:#DCFCE7; color:#166534; font-weight:700; padding:2px 6px; border-radius:4px;">Comfort Class</span>
+              </div>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">Automatic · 5 Seater · Boot: 433L · Apple CarPlay / Android Auto</p>
+              <div style="display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary); margin-top:0.25rem;">
+                <span>Full Fuel Tank Option</span> · <span>Clean Sanitized Interior</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹2,799</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per day (24 hours)</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Hyundai Creta Automatic Rental" data-price="₹2,799/day" data-desc="Self-drive Hyundai Creta with panoramic sunroof, automatic transmission, and unlimited mileage.">
+              Book Vehicle
+            </button>
+          </div>
+        </article>
+
+        <!-- Rental 3: Royal Enfield Himalayan 450 -->
+        <article class="result-card">
+          <div style="display:flex; align-items:center; gap:1.25rem;">
+            <div style="width:64px; height:64px; background:#FEF2F2; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:#DC2626;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:34px;height:34px;"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+            </div>
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Royal Enfield Himalayan 450</h3>
+                <span style="font-size:0.75rem; background:#EFF6FF; color:#1D4ED8; font-weight:700; padding:2px 6px; border-radius:4px;">Touring Bike</span>
+              </div>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">450cc Liquid-Cooled · Dual Helmets Included · Phone Mount</p>
+              <div style="display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary); margin-top:0.25rem;">
+                <span>Full Tank Delivery</span> · <span>Luggage Carrier Rack</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹1,499</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per day (24 hours)</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Royal Enfield Himalayan 450 Bike" data-price="₹1,499/day" data-desc="Adventure touring motorcycle with dual helmets, GPS phone clamp, and unlimited kilometers.">
+              Book Bike
+            </button>
+          </div>
+        </article>
+
+        <!-- Rental 4: Honda Activa -->
+        <article class="result-card">
+          <div style="display:flex; align-items:center; gap:1.25rem;">
+            <div style="width:64px; height:64px; background:#F0FDF4; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:#166534;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:34px;height:34px;"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+            </div>
+            <div>
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Honda Activa 6G Scooter</h3>
+                <span style="font-size:0.75rem; background:#DCFCE7; color:#15803D; font-weight:700; padding:2px 6px; border-radius:4px;">Beach Cruiser</span>
+              </div>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">110cc Automatic · Fuel Efficient (55 km/l) · 2 Helmets Provided</p>
+              <div style="display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary); margin-top:0.25rem;">
+                <span>No Fuel Security Deposit</span> · <span>Instant Handover</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹499</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per day (24 hours)</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Honda Activa Scooter Rental" data-price="₹499/day" data-desc="Automatic gearless scooter with 2 helmets, ideal for exploring coastal Goa lanes.">
+              Book Scooter
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

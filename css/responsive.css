@@ -1,0 +1,178 @@
+/* ==========================================================================
+   TravelEase — Responsive Stylesheet (responsive.css)
+   Mobile drawer, tablet layout adaptations, touch ergonomics
+   ========================================================================== */
+
+/* Tablet & Mobile Breakpoints (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .listings-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Mobile & Small Tablet Breakpoint (max-width: 900px) */
+@media (max-width: 900px) {
+  .nav-container {
+    height: 64px;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  /* Mobile Drawer */
+  .main-nav {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+    overflow-y: auto;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-lg);
+    z-index: 998;
+  }
+
+  .main-nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .header-actions {
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .header-actions .btn {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8125rem;
+  }
+
+  /* Search Panel on Mobile */
+  .search-panel-wrapper {
+    margin-top: -2rem;
+  }
+
+  .search-form-container {
+    padding: 1.25rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .swap-btn {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .hero-section {
+    padding: 4rem 0 5.5rem 0;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 1.25rem;
+  }
+}
+
+/* Small Smartphone Breakpoint (max-width: 600px) */
+@media (max-width: 600px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.125rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .search-tab-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  .newsletter-card {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .toast {
+    max-width: 100%;
+  }
+}

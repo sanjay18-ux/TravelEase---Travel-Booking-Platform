@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trains — TravelEase | Book IRCTC Train Tickets &amp; Check PNR Status</title>
+  <meta name="description" content="Instant train ticket booking, Tatkal quota reservations, PNR status, and live train running status with TravelEase.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link active">Trains</a></li>
+          <li><a href="buses.html" class="nav-link">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Train Ticket Reservations</h1>
+      <p class="page-header-subtitle">
+        Official partner train bookings with confirmed seat prediction, Tatkal quota alerts, and instant refund guarantees.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Search Widget -->
+  <div class="container" style="margin-top: -2rem;">
+    <div class="search-panel" style="padding: 1.5rem 2rem;">
+      <form class="search-form active" data-category="trains">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">From Station</label>
+            <input type="text" class="form-input" data-type="from" value="New Delhi (NDLS)" required>
+          </div>
+          <button type="button" class="swap-btn" title="Swap stations">
+            <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"></path><path d="M20 7H4"></path><path d="m8 21-4-4 4-4"></path><path d="M4 17h16"></path></svg>
+          </button>
+          <div class="form-group">
+            <label class="form-label">To Station</label>
+            <input type="text" class="form-input" data-type="to" value="Varanasi Jn (BSB)" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Journey Date</label>
+            <input type="date" class="form-input" data-date-type="depart" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quota</label>
+            <select class="form-select">
+              <option value="GN" selected>General Quota</option>
+              <option value="TQ">Tatkal</option>
+              <option value="LD">Ladies</option>
+              <option value="SS">Senior Citizen</option>
+            </select>
+          </div>
+          <div class="form-submit-col">
+            <button type="submit" class="form-submit-btn">Check Trains</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Listings Layout -->
+  <div class="container listings-container">
+    <div class="listings-layout">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">Filter Trains</h3>
+        
+        <div class="filter-group">
+          <h4 class="filter-title">Train Type</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Vande Bharat Express</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Rajdhani Express</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Superfast Express</label>
+          <label class="filter-checkbox"><input type="checkbox"> Garib Rath Express</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Classes</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> AC Executive (EC / 1A)</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> AC 2 Tier (2A)</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> AC 3 Tier (3A / 3E)</label>
+          <label class="filter-checkbox"><input type="checkbox"> Sleeper (SL)</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Departure Time</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Early Morning (00:00 - 06:00)</label>
+          <label class="filter-checkbox"><input type="checkbox"> Morning (06:00 - 12:00)</label>
+          <label class="filter-checkbox"><input type="checkbox"> Night (18:00 - 24:00)</label>
+        </div>
+      </aside>
+
+      <!-- Main Results -->
+      <main>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <h2 style="font-size:1.25rem; font-weight:700; color:var(--primary-navy);">
+            Trains: New Delhi &rarr; Varanasi
+          </h2>
+          <span style="font-size:0.875rem; color:var(--text-muted);">3 Daily Express Trains</span>
+        </div>
+
+        <!-- Train 1: Vande Bharat -->
+        <article class="result-card" style="flex-direction:column; align-items:stretch;">
+          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-light); padding-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+              <span style="background:#EEF2FF; color:#4F46E5; font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:4px;">High Speed</span>
+              <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy); margin-top:4px;">
+                22436 · Vande Bharat Express
+              </h3>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">Runs: Sun, Tue, Wed, Fri, Sat (Except Mon, Thu)</p>
+            </div>
+            <div style="text-align:right;">
+              <span style="font-size:0.75rem; color:var(--accent-teal); font-weight:700;">Avg Speed: 96 km/h</span>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:1.25rem 0; flex-wrap:wrap; gap:1.5rem;">
+            <div>
+              <div style="font-size:1.375rem; font-weight:800; color:var(--primary-navy);">06:00</div>
+              <div style="font-size:0.8125rem; font-weight:600; color:var(--text-secondary);">New Delhi (NDLS)</div>
+            </div>
+            <div style="text-align:center;">
+              <span style="font-size:0.75rem; color:var(--text-muted);">8h 00m</span>
+              <div style="width:120px; height:2px; background:var(--sky-blue); margin:4px auto;"></div>
+              <span style="font-size:0.6875rem; color:var(--text-muted);">Non-stop / 2 Halts</span>
+            </div>
+            <div>
+              <div style="font-size:1.375rem; font-weight:800; color:var(--primary-navy);">14:00</div>
+              <div style="font-size:0.8125rem; font-weight:600; color:var(--text-secondary);">Varanasi Jn (BSB)</div>
+            </div>
+          </div>
+
+          <!-- Classes Grid -->
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; padding-top:1rem; border-top:1px dashed var(--border-light);">
+            <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong style="display:block; font-size:0.875rem;">Chair Car (CC)</strong>
+                <span style="font-size:0.75rem; color:var(--success-green); font-weight:700;">AVL 42</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="display:block; font-weight:800; color:var(--primary-navy);">₹1,750</span>
+                <button class="btn btn-primary btn-sm" style="padding:2px 8px; font-size:0.75rem;" data-action="book" data-title="Vande Bharat 22436 (Chair Car)" data-price="₹1,750">Select</button>
+              </div>
+            </div>
+
+            <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong style="display:block; font-size:0.875rem;">Exec Class (EC)</strong>
+                <span style="font-size:0.75rem; color:var(--success-green); font-weight:700;">AVL 18</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="display:block; font-weight:800; color:var(--primary-navy);">₹3,300</span>
+                <button class="btn btn-primary btn-sm" style="padding:2px 8px; font-size:0.75rem;" data-action="book" data-title="Vande Bharat 22436 (Exec Class)" data-price="₹3,300">Select</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Train 2: Shiv Ganga Express -->
+        <article class="result-card" style="flex-direction:column; align-items:stretch;">
+          <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-light); padding-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+              <span style="background:#F0FDF4; color:#166534; font-size:0.75rem; font-weight:700; padding:2px 8px; border-radius:4px;">Overnight Superfast</span>
+              <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy); margin-top:4px;">
+                12560 · Shiv Ganga Express
+              </h3>
+              <p style="font-size:0.8125rem; color:var(--text-muted);">Runs: Daily (Mon, Tue, Wed, Thu, Fri, Sat, Sun)</p>
+            </div>
+            <div style="text-align:right;">
+              <span style="font-size:0.75rem; color:var(--accent-teal); font-weight:700;">Pantry Car Available</span>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:1.25rem 0; flex-wrap:wrap; gap:1.5rem;">
+            <div>
+              <div style="font-size:1.375rem; font-weight:800; color:var(--primary-navy);">20:05</div>
+              <div style="font-size:0.8125rem; font-weight:600; color:var(--text-secondary);">New Delhi (NDLS)</div>
+            </div>
+            <div style="text-align:center;">
+              <span style="font-size:0.75rem; color:var(--text-muted);">10h 10m</span>
+              <div style="width:120px; height:2px; background:var(--sky-blue); margin:4px auto;"></div>
+              <span style="font-size:0.6875rem; color:var(--text-muted);">Overnight Journey</span>
+            </div>
+            <div>
+              <div style="font-size:1.375rem; font-weight:800; color:var(--primary-navy);">06:15</div>
+              <div style="font-size:0.8125rem; font-weight:600; color:var(--text-secondary);">Varanasi Jn (BSB)</div>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:1rem; padding-top:1rem; border-top:1px dashed var(--border-light);">
+            <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong style="display:block; font-size:0.875rem;">AC 3 Tier (3A)</strong>
+                <span style="font-size:0.75rem; color:var(--success-green); font-weight:700;">AVL 68</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="display:block; font-weight:800; color:var(--primary-navy);">₹1,120</span>
+                <button class="btn btn-primary btn-sm" style="padding:2px 8px; font-size:0.75rem;" data-action="book" data-title="Shiv Ganga 12560 (AC 3 Tier)" data-price="₹1,120">Select</button>
+              </div>
+            </div>
+
+            <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong style="display:block; font-size:0.875rem;">AC 2 Tier (2A)</strong>
+                <span style="font-size:0.75rem; color:var(--success-green); font-weight:700;">AVL 22</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="display:block; font-weight:800; color:var(--primary-navy);">₹1,650</span>
+                <button class="btn btn-primary btn-sm" style="padding:2px 8px; font-size:0.75rem;" data-action="book" data-title="Shiv Ganga 12560 (AC 2 Tier)" data-price="₹1,650">Select</button>
+              </div>
+            </div>
+
+            <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong style="display:block; font-size:0.875rem;">AC 1st Class (1A)</strong>
+                <span style="font-size:0.75rem; color:#B45309; font-weight:700;">RAC 4</span>
+              </div>
+              <div style="text-align:right;">
+                <span style="display:block; font-weight:800; color:var(--primary-navy);">₹2,780</span>
+                <button class="btn btn-primary btn-sm" style="padding:2px 8px; font-size:0.75rem;" data-action="book" data-title="Shiv Ganga 12560 (AC 1A)" data-price="₹2,780">Select</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

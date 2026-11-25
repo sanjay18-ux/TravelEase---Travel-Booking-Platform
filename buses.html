@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buses — TravelEase | Book AC Sleeper &amp; Volvo Bus Tickets Online</title>
+  <meta name="description" content="Book intercity bus tickets online with TravelEase. Live bus tracking, AC Sleeper Volvo coaches, zero cancellation charges.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link">Trains</a></li>
+          <li><a href="buses.html" class="nav-link active">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Intercity Bus Tickets</h1>
+      <p class="page-header-subtitle">
+        Over 30,000 routes with certified luxury bus operators, sanitization guarantees, and real-time GPS tracking.
+      </p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: -2rem;">
+    <div class="search-panel" style="padding: 1.5rem 2rem;">
+      <form class="search-form active" data-category="buses">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Leaving From</label>
+            <input type="text" class="form-input" data-type="from" value="Bengaluru" required>
+          </div>
+          <button type="button" class="swap-btn" title="Swap cities">
+            <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"></path><path d="M20 7H4"></path><path d="m8 21-4-4 4-4"></path><path d="M4 17h16"></path></svg>
+          </button>
+          <div class="form-group">
+            <label class="form-label">Going To</label>
+            <input type="text" class="form-input" data-type="to" value="Hyderabad" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date of Journey</label>
+            <input type="date" class="form-input" data-date-type="depart" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Bus Model</label>
+            <select class="form-select">
+              <option value="all">All Bus Categories</option>
+              <option value="sleeper" selected>AC Sleeper (2+1)</option>
+              <option value="volvo">Volvo 9600 Multi-Axle</option>
+            </select>
+          </div>
+          <div class="form-submit-col">
+            <button type="submit" class="form-submit-btn">Search Buses</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container listings-container">
+    <div class="listings-layout">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 1.25rem;">Filter Buses</h3>
+        
+        <div class="filter-group">
+          <h4 class="filter-title">Bus Type</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> AC Sleeper (2+1)</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Volvo Multi-Axle AC</label>
+          <label class="filter-checkbox"><input type="checkbox"> Bharat Benz AC Sleeper</label>
+          <label class="filter-checkbox"><input type="checkbox"> Non-AC Seater</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Departure Time</h4>
+          <label class="filter-checkbox"><input type="checkbox"> Morning (06:00 - 12:00)</label>
+          <label class="filter-checkbox"><input type="checkbox"> Afternoon (12:00 - 18:00)</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Night (18:00 - 24:00)</label>
+        </div>
+
+        <div class="filter-group">
+          <h4 class="filter-title">Amenities</h4>
+          <label class="filter-checkbox"><input type="checkbox" checked> Live Tracking</label>
+          <label class="filter-checkbox"><input type="checkbox" checked> Charging Points</label>
+          <label class="filter-checkbox"><input type="checkbox"> Blankets &amp; Water Bottle</label>
+        </div>
+      </aside>
+
+      <!-- Results List -->
+      <main>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <h2 style="font-size:1.25rem; font-weight:700; color:var(--primary-navy);">
+            Buses: Bengaluru &rarr; Hyderabad
+          </h2>
+          <span style="font-size:0.875rem; color:var(--text-muted);">Showing 3 premium operators</span>
+        </div>
+
+        <!-- Bus 1 -->
+        <article class="result-card">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+              <h3 style="font-size:1.125rem; font-weight:700; color:var(--primary-navy);">IntrCity SmartBus</h3>
+              <span style="background:#DCFCE7; color:#15803D; font-size:0.75rem; font-weight:700; padding:2px 6px; border-radius:4px;">★ 4.8</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">Volvo Multi-Axle 9600 AC Sleeper (2+1)</p>
+            <div style="margin-top:0.5rem; display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+              <span>GPS Tracking</span> · <span>Charging Ports</span> · <span>CCTV</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:2rem; text-align:center;">
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">21:30</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Majestic, BLR</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; min-width:80px;">
+              <span style="font-size:0.75rem; color:var(--text-muted);">8h 45m</span>
+              <div style="width:100%; height:2px; background:var(--sky-blue); margin:4px 0;"></div>
+              <span style="font-size:0.6875rem; color:var(--accent-teal); font-weight:600;">14 Seats Left</span>
+            </div>
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">06:15</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Gachibowli, HYD</div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹1,199</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per berth</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="IntrCity SmartBus (BLR -> HYD)" data-price="₹1,199" data-desc="Departure 21:30 PM from Majestic, Bengaluru. Volvo 9600 AC Sleeper berth.">
+              Select Seat
+            </button>
+          </div>
+        </article>
+
+        <!-- Bus 2 -->
+        <article class="result-card">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+              <h3 style="font-size:1.125rem; font-weight:700; color:var(--primary-navy);">Orange Travels</h3>
+              <span style="background:#DCFCE7; color:#15803D; font-size:0.75rem; font-weight:700; padding:2px 6px; border-radius:4px;">★ 4.7</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">Mercedes Benz Multi-Axle AC Sleeper</p>
+            <div style="margin-top:0.5rem; display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+              <span>Blanket Provided</span> · <span>Reading Lights</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:2rem; text-align:center;">
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">22:15</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Madiwala, BLR</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; min-width:80px;">
+              <span style="font-size:0.75rem; color:var(--text-muted);">8h 30m</span>
+              <div style="width:100%; height:2px; background:var(--sky-blue); margin:4px 0;"></div>
+              <span style="font-size:0.6875rem; color:var(--accent-teal); font-weight:600;">8 Seats Left</span>
+            </div>
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">06:45</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Ameerpet, HYD</div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹1,350</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per berth</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Orange Travels (BLR -> HYD)" data-price="₹1,350" data-desc="Departure 22:15 PM from Madiwala, Bengaluru. Mercedes Benz Multi-Axle AC.">
+              Select Seat
+            </button>
+          </div>
+        </article>
+
+        <!-- Bus 3 -->
+        <article class="result-card">
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.25rem;">
+              <h3 style="font-size:1.125rem; font-weight:700; color:var(--primary-navy);">Zingbus Express</h3>
+              <span style="background:#DCFCE7; color:#15803D; font-size:0.75rem; font-weight:700; padding:2px 6px; border-radius:4px;">★ 4.9</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">Scania Multi-Axle AC Sleeper with Premium Lounge</p>
+            <div style="margin-top:0.5rem; display:flex; gap:0.5rem; font-size:0.75rem; color:var(--text-secondary);">
+              <span>On-Time Guarantee</span> · <span>Lounge Access</span>
+            </div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:2rem; text-align:center;">
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">23:00</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Hebbal, BLR</div>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; min-width:80px;">
+              <span style="font-size:0.75rem; color:var(--text-muted);">8h 00m</span>
+              <div style="width:100%; height:2px; background:var(--sky-blue); margin:4px 0;"></div>
+              <span style="font-size:0.6875rem; color:var(--accent-teal); font-weight:600;">20 Seats Left</span>
+            </div>
+            <div>
+              <div style="font-size:1.25rem; font-weight:800; color:var(--primary-navy);">07:00</div>
+              <div style="font-size:0.75rem; color:var(--text-muted);">Kukatpally, HYD</div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹1,050</div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">per berth</div>
+            <button class="btn btn-primary btn-sm" data-action="book" data-title="Zingbus Express (BLR -> HYD)" data-price="₹1,050" data-desc="Departure 23:00 PM from Hebbal, Bengaluru. Premium Scania AC sleeper.">
+              Select Seat
+            </button>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

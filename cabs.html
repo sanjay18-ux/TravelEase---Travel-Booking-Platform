@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabs — TravelEase | Outstation Cabs &amp; Airport Taxi Transfers</title>
+  <meta name="description" content="Book outstation cabs, one-way drops, and airport transfers with verified chauffeurs and transparent per-km billing on TravelEase.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link">Trains</a></li>
+          <li><a href="buses.html" class="nav-link">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link active">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Chauffeur Cab Services</h1>
+      <p class="page-header-subtitle">
+        Outstation one-way drops, airport pick &amp; drops, and multi-day roundtrips with transparent billing and zero surge pricing.
+      </p>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: -2rem;">
+    <div class="search-panel" style="padding: 1.5rem 2rem;">
+      <form class="search-form active" data-category="cabs">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Pickup Location</label>
+            <input type="text" class="form-input" data-type="from" value="Mumbai Airport (BOM)" required>
+          </div>
+          <button type="button" class="swap-btn" title="Swap locations">
+            <svg style="width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"></path><path d="M20 7H4"></path><path d="m8 21-4-4 4-4"></path><path d="M4 17h16"></path></svg>
+          </button>
+          <div class="form-group">
+            <label class="form-label">Drop Location</label>
+            <input type="text" class="form-input" data-type="to" value="Lonavala" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Pickup Date</label>
+            <input type="date" class="form-input" data-date-type="depart" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Pickup Time</label>
+            <input type="time" class="form-input" value="09:00" required>
+          </div>
+          <div class="form-submit-col">
+            <button type="submit" class="form-submit-btn">Search Cabs</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container listings-container">
+    <div style="max-width: 880px; margin: 0 auto;">
+      <h2 style="font-size:1.25rem; font-weight:700; color:var(--primary-navy); margin-bottom:1.5rem;">
+        Available Fleet: Mumbai Airport &rarr; Lonavala (85 km)
+      </h2>
+
+      <!-- Cab 1: Sedan -->
+      <article class="result-card">
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <div style="width:56px; height:56px; background:var(--sky-subtle); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:var(--sky-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:30px;height:30px;"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3 3 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Sedan · Dzire or Etios</h3>
+              <span style="font-size:0.75rem; background:#DCFCE7; color:#166534; font-weight:700; padding:2px 6px; border-radius:4px;">★ 4.9 Driver</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">4 Seats · 2 Large Bags · Air Conditioned · Sanitized</p>
+            <p style="font-size:0.75rem; color:var(--accent-teal); margin-top:0.25rem;">Toll &amp; State Taxes Included · Free 45 min waiting at airport</p>
+          </div>
+        </div>
+
+        <div style="text-align:right;">
+          <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹2,199</div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">Total all inclusive</div>
+          <button class="btn btn-primary btn-sm" data-action="book" data-title="Sedan Cab Booking (Mumbai to Lonavala)" data-price="₹2,199" data-desc="AC Sedan with chauffeur pickup at Mumbai Airport, drop at Lonavala hotel.">
+            Book Sedan
+          </button>
+        </div>
+      </article>
+
+      <!-- Cab 2: SUV Innova -->
+      <article class="result-card">
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <div style="width:56px; height:56px; background:#FEF3C7; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:#B45309;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:30px;height:30px;"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3 3 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">SUV · Innova Crysta</h3>
+              <span style="font-size:0.75rem; background:#FEF3C7; color:#B45309; font-weight:700; padding:2px 6px; border-radius:4px;">Top Family Choice</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">6-7 Seats · 4 Bags · Extra Legroom · Captain Chairs</p>
+            <p style="font-size:0.75rem; color:var(--accent-teal); margin-top:0.25rem;">Expressway Toll Included · Chauffeur with 8+ years experience</p>
+          </div>
+        </div>
+
+        <div style="text-align:right;">
+          <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹3,499</div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">Total all inclusive</div>
+          <button class="btn btn-primary btn-sm" data-action="book" data-title="Innova Crysta SUV (Mumbai to Lonavala)" data-price="₹3,499" data-desc="Spacious 7-seater AC Innova Crysta for comfortable ghat road family travel.">
+            Book SUV
+          </button>
+        </div>
+      </article>
+
+      <!-- Cab 3: Luxury Mercedes / BMW -->
+      <article class="result-card">
+        <div style="display:flex; align-items:center; gap:1.25rem;">
+          <div style="width:56px; height:56px; background:#F3E8FF; border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; color:#7E22CE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:30px;height:30px;"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3 3 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <h3 style="font-size:1.125rem; font-weight:800; color:var(--primary-navy);">Executive · Mercedes E-Class / Audi</h3>
+              <span style="font-size:0.75rem; background:#F3E8FF; color:#7E22CE; font-weight:700; padding:2px 6px; border-radius:4px;">VIP Protocol</span>
+            </div>
+            <p style="font-size:0.8125rem; color:var(--text-muted);">4 Seats · Uniformed Chauffeur · In-car Refreshments &amp; Wi-Fi</p>
+            <p style="font-size:0.75rem; color:var(--accent-teal); margin-top:0.25rem;">Terminal meet-and-greet with name placard</p>
+          </div>
+        </div>
+
+        <div style="text-align:right;">
+          <div style="font-size:1.5rem; font-weight:800; color:var(--primary-navy);">₹8,500</div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.5rem;">Total all inclusive</div>
+          <button class="btn btn-primary btn-sm" data-action="book" data-title="Luxury Chauffeur Service (Mercedes E-Class)" data-price="₹8,500" data-desc="Executive terminal meet & greet with bottled water, Wi-Fi, and luxury Mercedes chauffeur ride.">
+            Book Executive
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations — TravelEase | Discover Top Domestic &amp; Global Places</title>
+  <meta name="description" content="Explore top travel destinations with TravelEase. Discover weather guides, best times to visit, local cuisine, and top-rated stays.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="TravelEase Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+          </svg>
+        </span>
+        Travel<span class="accent">Ease</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flights.html" class="nav-link">Flights</a></li>
+          <li><a href="trains.html" class="nav-link">Trains</a></li>
+          <li><a href="buses.html" class="nav-link">Buses</a></li>
+          <li><a href="hotels.html" class="nav-link">Hotels</a></li>
+          <li><a href="cabs.html" class="nav-link">Cabs</a></li>
+          <li><a href="rentals.html" class="nav-link">Rentals</a></li>
+          <li><a href="packages.html" class="nav-link">Holiday Packages</a></li>
+          <li><a href="cruises.html" class="nav-link">Cruises</a></li>
+          <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-sm btn-outline">Login</a>
+        <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title">Destination Explorer</h1>
+      <p class="page-header-subtitle">
+        Find your next dream destination. Browse comprehensive travel guides, seasonal weather insights, and curated stays.
+      </p>
+    </div>
+  </section>
+
+  <!-- Destination Cards Detailed Grid -->
+  <div class="container section">
+    <div class="destinations-grid" style="grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));">
+      <!-- 1. Goa -->
+      <article class="destination-card" id="goa">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/hero_travel_paradise_1791543352459.jpg" alt="Goa tropical beach" class="dest-image" loading="lazy">
+          <span class="dest-badge">Sun &amp; Sea · India</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Goa, India</h3>
+            <span class="dest-price">From <strong>₹4,999</strong></span>
+          </div>
+          <p class="dest-desc">
+            Famous for golden sand beaches, 17th-century Portuguese churches, vibrant flea markets, and mouth-watering seafood shacks.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> November to March</div>
+            <div><strong>Top Highlights:</strong> Palolem Beach, Dudhsagar Falls, Fort Aguada</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.9 (1.8k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Manali -->
+      <article class="destination-card" id="manali">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/destination_switzerland_1791543381240.jpg" alt="Manali snow peaks" class="dest-image" loading="lazy">
+          <span class="dest-badge">Himalayan Haven · India</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Manali, Himachal Pradesh</h3>
+            <span class="dest-price">From <strong>₹6,999</strong></span>
+          </div>
+          <p class="dest-desc">
+            Nestled in the Beas River Valley, surrounded by pine forests, hot water springs, and snow-capped peaks of Rohtang Pass.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> October to June (Dec-Feb for Snow)</div>
+            <div><strong>Top Highlights:</strong> Solang Valley, Atal Tunnel, Old Manali Cafes</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.8 (2.1k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Kerala -->
+      <article class="destination-card" id="kerala">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/destination_kashmir_1791543419085.jpg" alt="Kerala backwaters" class="dest-image" loading="lazy">
+          <span class="dest-badge">God's Own Country · India</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Kerala Backwaters</h3>
+            <span class="dest-price">From <strong>₹7,999</strong></span>
+          </div>
+          <p class="dest-desc">
+            Glide past coconut groves on an authentic wooden kettuvallam houseboat, explore mist-covered Munnar tea estates, and relish coastal spices.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> September to March</div>
+            <div><strong>Top Highlights:</strong> Alleppey Backwaters, Munnar Tea Gardens, Varkala Cliff</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.9 (3.4k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Jaipur -->
+      <article class="destination-card" id="jaipur">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/destination_dubai_1791543397438.jpg" alt="Jaipur palaces" class="dest-image" loading="lazy">
+          <span class="dest-badge">Royal Heritage · India</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Jaipur, Rajasthan</h3>
+            <span class="dest-price">From <strong>₹4,499</strong></span>
+          </div>
+          <p class="dest-desc">
+            The Pink City showcases royal Rajput architecture, intricate pink sandstone facades, opulent palaces, and grand historic forts.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> October to March</div>
+            <div><strong>Top Highlights:</strong> Amber Palace, Hawa Mahal, Jal Mahal, Chokhi Dhani</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.7 (1.5k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Bali -->
+      <article class="destination-card" id="bali">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/destination_bali_1791543365647.jpg" alt="Bali cliff sea temple" class="dest-image" loading="lazy">
+          <span class="dest-badge">Island of Gods · Indonesia</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Bali, Indonesia</h3>
+            <span class="dest-price">From <strong>₹34,999</strong></span>
+          </div>
+          <p class="dest-desc">
+            A lush tropical sanctuary adorned with cliff-top sacred sea temples, world-class beach clubs, tranquil yoga ashrams, and emerald rice paddies.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> April to October</div>
+            <div><strong>Top Highlights:</strong> Uluwatu Temple, Tegalalang Terraces, Nusa Penida</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>4.9 (4.2k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. Switzerland -->
+      <article class="destination-card" id="switzerland">
+        <div class="dest-image-wrap" style="height:240px;">
+          <img src="assets/images/destination_switzerland_1791543381240.jpg" alt="Swiss chalets and alps" class="dest-image" loading="lazy">
+          <span class="dest-badge">Alpine Wonderland · Europe</span>
+        </div>
+        <div class="dest-content">
+          <div class="dest-header">
+            <h3 class="dest-name">Swiss Alps, Switzerland</h3>
+            <span class="dest-price">From <strong>₹79,999</strong></span>
+          </div>
+          <p class="dest-desc">
+            Pristine alpine chalets, the Jungfraujoch summit train, crystalline Lucerne waters, and world-renowned artisan cheese and chocolate craftsmanship.
+          </p>
+          <div style="background:var(--bg-subtle); padding:0.75rem; border-radius:var(--radius-sm); font-size:0.8125rem; margin-bottom:1rem;">
+            <div><strong>Best Time to Visit:</strong> June to September &amp; Dec to March (Skiing)</div>
+            <div><strong>Top Highlights:</strong> Zermatt Matterhorn, Interlaken, Lake Geneva</div>
+          </div>
+          <div class="dest-footer">
+            <div class="dest-rating">
+              <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>5.0 (4.9k reviews)</span>
+            </div>
+            <a href="packages.html" class="btn btn-sm btn-primary">View Packages</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 TravelEase Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#terms">Terms</a>
+          <a href="contact.html#privacy">Privacy</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
